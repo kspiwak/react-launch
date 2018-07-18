@@ -1,0 +1,5 @@
+apps:
+  - script   : 'server.js'
+    name     : 'simple-react-app'
+    exec_mode: 'cluster'
+instances: 'max'
