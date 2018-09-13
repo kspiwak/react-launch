@@ -18,14 +18,15 @@ app.get('/ping', function (req, res) {
   return res.send('pong');
 });
 
-// Main web app
-app.get('/', function (req, res) {
-  console.log('GET /');
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
 
 // API proxy
 app.use('/api', apiRoutes);
+
+// Main web app
+app.get('/*', function (req, res) {
+  console.log('GET /');
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 let port = process.env.PORT || 8080;
 app.listen(port);
