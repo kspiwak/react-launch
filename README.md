@@ -10,8 +10,8 @@ npm install -g yarn
 ```
 
 ```
-git clone https://github.com/0xc00010ff/simple-react-app.git  
-cd simple-react-app
+git clone https://github.com/0xc00010ff/react-launch.git  
+cd react-launch
 yarn install
 ```
 
